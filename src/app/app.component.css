@@ -1,0 +1,9 @@
+main {
+    background: repeating-linear-gradient(
+  to right,
+  #b8c70d,
+  #b8c70d 40px,
+  #94c90e 40px,
+  #94c90e 90px
+);
+}

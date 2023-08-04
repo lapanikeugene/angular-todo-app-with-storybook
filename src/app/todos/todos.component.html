@@ -1,0 +1,17 @@
+<div class="todos">
+   
+    <div class="text-center pt-10">
+        All todos {{todos.length}} 
+
+    </div>
+    <app-form-add></app-form-add>
+    <section  class="h-[330px] overflow-y-auto">
+        <div *ngFor="let todo of todos; let i = index;"  >
+        
+            <app-todo-element [todo]="todo" [index]="i">
+                
+            </app-todo-element>
+        </div>
+    </section>
+   
+</div>
