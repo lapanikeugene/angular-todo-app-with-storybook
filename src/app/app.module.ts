@@ -9,6 +9,7 @@ import { FormAddComponent } from './form-add/form-add.component';
 import { StoreModule } from '@ngrx/store';
 import { TodoReducer } from 'src/store/todo.reducer';
 import { TodoElementComponent } from './todo-element/todo-element.component';
+import { SharedModule } from './sharing.module';
 
 @NgModule({
   declarations: [
@@ -16,10 +17,11 @@ import { TodoElementComponent } from './todo-element/todo-element.component';
     TodosComponent,
     TitleComponent,
     FormAddComponent,
-    TodoElementComponent
+    
   ],
   imports: [
     BrowserModule,
+    SharedModule,
     FormsModule,
     StoreModule.forRoot({
       todos:TodoReducer,

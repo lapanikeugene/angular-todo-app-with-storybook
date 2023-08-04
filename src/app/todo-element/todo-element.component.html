@@ -1,6 +1,6 @@
 
 <div *ngIf="todo" class="flex justify-between items-center px-3 my-2  hover:bg-slate-100">
     <div class="id  text-2xl">{{(index)+1}}.</div>
-        <div class=" {{todo.completed ? 'line-through' : ''}} flex-grow cursor-pointer text-2xl" (click)="toggleDone(index)">{{todo.content}}</div>
+        <div class=" {{todo?.completed ? 'line-through' : ''}} flex-grow cursor-pointer text-2xl" (click)="toggleDone(index)">{{todo?.content}}</div>
         <button (click)="deleteTodo(index)" class="rounded-lg hover:transition ease-in-out hover:scale-110 border-2 border-black bg-white p-2 m-1 hover:bg-red-100">Delete</button>
 </div>

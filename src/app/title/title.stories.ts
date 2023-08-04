@@ -1,5 +1,5 @@
 import { Meta, StoryObj, moduleMetadata } from "@storybook/angular";
-import { TitleComponent } from "src/app/title/title.component";
+import { TitleComponent } from "./title.component";
 
 
 const meta: Meta<TitleComponent> = {
@@ -17,7 +17,7 @@ export default meta;
 type Story = StoryObj<TitleComponent>;
 
 
-export const DefaultTitle:Story =  {
+export const Title:Story =  {
     args: {
      
     },
